@@ -10,50 +10,168 @@
             background-image: url(Images/fondo.jpg);
             background-size: cover;
             background-position: sticky;
+            
             margin: 0;
+            width: 100%;
 
+            text-align: center;
         }
-        .banner{
-            background-color: black;
-            position: sticky;
+
+        .justFont{
+            font-family: "October Crow";
+        }
+
+        .fontRed{
+            font-family: "October Crow";
+            color: rgb(252, 44, 44);
+        }
+
+        .banner, .PHASMOPHOBIATITULO{
+            background-color: rgba(0, 0, 0, 0.7); /*Esto toca el alpha que me permite hacerlo casi transparente y le da un toque cool permitiendo ver el fondo*/
+            position: relative;
             left: 0;
             top: 0;
         }
 
-        h1{
+        .bannerTexto{
+            background-color: rgba(0, 0, 0, 0.6);
+            color: whitesmoke;
+            
+            left: 100;
+            top: 100;
+        }
+
+        h1, h2{
             font-family: "October Crow";
             font-weight: normal;
             color: whitesmoke;
 
             border: 0px 0px 0px 0px;
-            padding: 10px 0px 0px 10px;
+            padding: 10px 0px 0px 600px;
             margin: 10px 0px 0px 0px;
             
         }
-        h2{
-            font-family: "October Crow";
-            font-weight: normal;
-            color: whitesmoke;
+        h1{
+            text-align: left;
+        }
 
+        h2{
             text-align: center;
 
             border: 0px 0px 0px 0px;
             padding: 10px 0px 0px 0px;
             margin: 0px 0px 0px 0px;
         }
-        img{
 
-            float: right;
+        p{
+            text-indent: 5%;
+            text-align: justify;
+
+            border: 0px 0px 0px 0px;
+            padding: 0px 100px 0px 100px;
+            margin: 10px 0px 0px 0px;
+
+            font-size: 20px;
         }
+
+        
+       
+        .PHASMOPHOBIATITULO{
+            
+            font-size: 55px;
+
+            text-align: right;
+
+            padding: 10px 515px 10px 0px;
+        }
+          
+        .imgSuperpuesta{
+            position: absolute;
+            top: 10px;
+            left: 400px;
+            z-index: 2;
+        }
+
+        .floatRight{
+            position: absolute;
+            top: 15px;
+            right: 350px;
+            z-index: 2;
+        }
+        .imgPag1y2{
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+            vertical-align: middle;
+
+            margin-top: 20px;
+
+        }
+        .imgPag1y2 img{
+            
+            width: 200px;
+            height: 200px;
+            
+            
+        }
+        .imgPag1y2 img:first-child{
+            margin-right: 10px;
+        }
+        .imgPag1y2 img:last-child{
+            margin-left: 10px;
+        }
+
+        a:hover{
+            color: yellowgreen;
+        }
+    
         
     </style>
 </head>
 <body>
-    <h1 class="banner">A GHOST HUNTIN'</h1> 
-    <h2 class="banner">INVESTIGATOR'S GUIDE TO </h2>
-    <img src="Images/Phasmo logo.png" width="250">
-        
+
+    <div>
+        <img src="Images/Ghost.png" class="imgSuperpuesta" width="150px" height="150px">
+    </div>
+
+    <div class="floatRight">
+        <img src="Images/Ghost2.png" width="100px" height="150px">
+    </div>
+
+    <div class="banner">
+        <h1>A GHOST HUNTIN'</h1> 
+        <h2>INVESTIGATOR'S GUIDE TO </h2>
+    </div>
+
+    <div>
+        <h2 class="PHASMOPHOBIATITULO">PHASMOPHOBIA</h2>
+    </div>
+
     
+    
+    <div class="bannerTexto">
+        <p><span class="justFont">Phasmophobia</span> es un videojuego de investigación paranormal <i>survival horror</i> desarrollado por <i>Kinetic Games</i> en el que los jugadores trabajarán en solitario o en grupo con el fin de resolver un contrato. Este contrato consiste en identificar correctamente al fantasma que asola una localización concreta (ya sea una casa, un instituto o unas antiguas instalaciones médicas).</p>
+        
+
+            
+        <p>El objetivo del juego será conseguir identificar al fantasma sin perder la vida en el intento. Pero, ¿cómo podemos sobrevivir a una entidad paranormal? Pues para eso existe esta preciosa página web™ creada con el único motivo de ayudarte a ganar unos dineritos resolviendo casos y a evitar que acabes siendo <span class="fontRed">devorada</span> por un Yurei.</p>
+
+
+
+        <p>La guía estará dividida en dos partes. La primera será "Fantasmas", donde encontraréis información acerca de los 24 fantasmas que existen actualmente en el juego (qué pruebas necesitan, cómo se comportan, etc.). La segunda, "Miscelánea", contendrá información acerca del equipo para identificar fantasmas, así como información sobre las distintas localizaciones en las que pueden aparecer y algunos consejos de cómo evitar morir en el acto.</p>
+    </div>
+    
+    <div class="imgPag1y2">
+        <a href="PgWeb2InfoGhost.html"><img src="Images/GhostThumb.png"></a>
+        <a href="PgWeb3InfoHouse.html"><img src="Images/MapsThumb.png"></a>
+    </div>
+    
+
+
+    <div class="bannerTexto">
+        <p>En lo referente a las fuentes para la realización de este proyecto tenemos dos grandes contribuyentes: <a href="https://phasmophobia.fandom.com/wiki/Main_Page">la Phasmopedia</a> y mi propia experiencia jugando (tres veces campeón mundial de Phasmophobia🥇).</p>
+    </div>
     
 </body>
 </html>
